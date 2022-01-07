@@ -15,7 +15,7 @@ using PPEIMSApi.Models;
 namespace PPEIMSApi.Controllers
 {
 
-    //this is from homes
+    //this is from home
     public class ReportController : ApiController
     {
 
