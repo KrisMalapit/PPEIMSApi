@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c6a9848c836d45488780b4e98ee34dcd" Name="Diagram1">
+        <EntityTypeShape EntityType="PPEIMSModel.Companies" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.DepartmentPPEs" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.Departments" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.ItemDetails" Width="1.5" PointX="8.25" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.Items" Width="1.5" PointX="6" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.Logs" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.NoSeries" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.PPEs" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.RequestDetails" Width="1.5" PointX="8.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.RequestDetailUsers" Width="1.5" PointX="10.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.Requests" Width="1.5" PointX="6" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.Roles" Width="1.5" PointX="6" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PPEIMSModel.Users" Width="1.5" PointX="8.25" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="PPEIMSModel.FK_Departments_Companies_CompanyId" ManuallyRouted="false" />
+        <AssociationConnector Association="PPEIMSModel.FK_DepartmentPPEs_Departments_DepartmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="PPEIMSModel.FK_DepartmentPPEs_PPEs_PPEId" ManuallyRouted="false" />
+        <AssociationConnector Association="PPEIMSModel.FK_Users_Departments_DepartmentId" ManuallyRouted="false" />
+        <AssociationConnector Association="PPEIMSModel.FK_ItemDetails_Items_ItemId" ManuallyRouted="false" />
+        <AssociationConnector Association="PPEIMSModel.FK_Items_PPEs_PPEId" ManuallyRouted="false" />
+        <AssociationConnector Association="PPEIMSModel.FK_RequestDetails_Items_ItemId" ManuallyRouted="false" />
+        <AssociationConnector Association="PPEIMSModel.FK_RequestDetails_Requests_RequestId" ManuallyRouted="false" />
+        <AssociationConnector Association="PPEIMSModel.FK_RequestDetailUsers_RequestDetails_RequestDetailId" ManuallyRouted="false" />
+        <AssociationConnector Association="PPEIMSModel.FK_RequestDetailUsers_Users_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="PPEIMSModel.FK_Users_Roles_RoleId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
